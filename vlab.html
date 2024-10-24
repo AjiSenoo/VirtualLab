@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projectile Simulation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Parabola</h1>
+    <h3>Akmal Galih Aji Sugmo Seno -- 18222046</h3>
+
+    <div class="controls-container">
+        <div class="controls">
+            <label for="velocity">Kecepatan (m/s):</label>
+            <input type="number" id="velocity" value="50">
+            <label for="angle">Sudut (degrees):</label>
+            <input type="number" id="angle" value="45">
+            <label for="mass">Massa (kg):</label>
+            <input type="number" id="mass" value="1">
+            <button id="massInfoBtn" class="info-button">?</button>
+            <button onclick="startSimulation()" class="launch-btn">Tembak!</button>
+        </div>
+    </div>
+
+    <!-- Scrollable canvas container -->
+    <div class="canvas-container">
+        <canvas id="simulationCanvas" width="800" height="400"></canvas>
+        <div class="cannon" id="cannon"></div>
+    </div>
+
+    <!-- Data bawah -->
+    <div class="data-display">
+        <div class="data-card">
+            <p id="timeElapsed">Waktu tempuh: 0s</p>
+            <p id="distance">Jarak: 0m</p>
+            <p id="maximumHeight">Ketinggian maksimum: 0m</p> <!-- Maximum Height -->
+        </div>
+    </div>
+
+    <!-- Popup funfact -->
+    <div id="massInfoPopup" class="popup hidden">
+        <p><strong>Did you know?</strong> <br/>Since we're living in a world with no air resistance (ideal), the mass isn't affecting the trajectory of the ball.<br/><br/> This is because, <br/> <i>F<sub>gravity</sub>=mg</i> and <i>F=ma</i> <br/>and the Force is done just by gravity! <br/> Hence, <i>F<sub>gravity</sub> = F</i> <br/>Which the mass would cancel each other! <br/><br/><i>Go try with some numbers!</i></p>
+        <button id="closePopupBtn" class="close-popup-btn">Close</button>
+    </div>
+
+    <script src="vlab.js"></script>
+</body>
+</html>
