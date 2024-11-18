@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sorting Quiz</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+  <header>
+    <h1>Sorting Quiz</h1>
+  </header>
+  <main>
+    <div class="quiz-container">
+      <div id="quiz">
+        <!-- Question 1 -->
+        <div class="question">
+          <h2>1. Which sorting algorithm is the fastest in most cases?</h2>
+          <ul>
+            <li><button onclick="checkAnswer(this, false)">Bubble Sort</button></li>
+            <li><button onclick="checkAnswer(this, false)">Insertion Sort</button></li>
+            <li><button onclick="checkAnswer(this, true)">Quick Sort</button></li>
+            <li><button onclick="checkAnswer(this, false)">Selection Sort</button></li>
+          </ul>
+        </div>
+        <!-- Question 2 -->
+        <div class="question">
+          <h2>2. Which sorting algorithm is the simplest to implement?</h2>
+          <ul>
+            <li><button onclick="checkAnswer(this, false)">Merge Sort</button></li>
+            <li><button onclick="checkAnswer(this, true)">Bubble Sort</button></li>
+            <li><button onclick="checkAnswer(this, false)">Heap Sort</button></li>
+            <li><button onclick="checkAnswer(this, false)">Quick Sort</button></li>
+          </ul>
+        </div>
+        <!-- Question 3 -->
+        <div class="question">
+          <h2>3. Which sorting algorithm uses a divide-and-conquer approach?</h2>
+          <ul>
+            <li><button onclick="checkAnswer(this, false)">Selection Sort</button></li>
+            <li><button onclick="checkAnswer(this, false)">Bubble Sort</button></li>
+            <li><button onclick="checkAnswer(this, true)">Merge Sort</button></li>
+            <li><button onclick="checkAnswer(this, false)">Heap Sort</button></li>
+          </ul>
+        </div>
+        <!-- Question 4 -->
+        <div class="question">
+          <h2>4. Which sorting algorithm has the best worst-case time complexity?</h2>
+          <ul>
+            <li><button onclick="checkAnswer(this, true)">Merge Sort</button></li>
+            <li><button onclick="checkAnswer(this, false)">Quick Sort</button></li>
+            <li><button onclick="checkAnswer(this, false)">Bubble Sort</button></li>
+            <li><button onclick="checkAnswer(this, false)">Selection Sort</button></li>
+          </ul>
+        </div>
+        <!-- Question 5 -->
+        <div class="question">
+          <h2>5. Which sorting algorithm is stable?</h2>
+          <ul>
+            <li><button onclick="checkAnswer(this, false)">Heap Sort</button></li>
+            <li><button onclick="checkAnswer(this, true)">Merge Sort</button></li>
+            <li><button onclick="checkAnswer(this, false)">Quick Sort</button></li>
+            <li><button onclick="checkAnswer(this, false)">Selection Sort</button></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+            <!-- Submit Button -->
+            <button id="submit-btn" onclick="showScore()">Submit</button>
+            <!-- Result -->
+            <div id="result"></div>
+  </main>
+  <footer>
+    <a href="/home/home.html" class="back-to-home">Back to Home</a>
+  </footer>
+  <script src="quiz.js"></script>
+</body>
+</html>
