@@ -1,0 +1,99 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+  }
+  
+  header {
+    text-align: center;
+    padding: 1rem;
+    background-color: #6c63ff;
+    color: white;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-weight: 600;
+  }
+  
+  main {
+    max-width: 900px;
+    margin: 2rem auto;
+    text-align: center;
+  }
+  
+  #array-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 300px;
+    margin: 2rem auto;
+    gap: 5px;
+  }
+  
+  .bar {
+    background-color: #6c63ff;
+    width: 30px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .bar.sorted {
+    background-color: #34c759;
+  }
+  
+  button {
+    background-color: #6c63ff;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0.5rem;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #4a47e0;
+  }
+
+  .bar {
+    background-color: #6c63ff;
+    width: 30px;
+    position: relative; /* Required for label positioning */
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    transition: all 0.5s ease-in-out; /* Animation speed adjusted */
+  }
+  
+  .bar.sorted {
+    background-color: #34c759;
+  }
+  
+  .bar-label {
+    position: absolute;
+    top: -25px; /* Position label above the bar */
+    color: #333;
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+  .back-to-home {
+    display: inline-block;
+    margin: 2rem auto;
+    padding: 0.8rem 1.5rem;
+    background-color: #6c63ff;
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .back-to-home:hover {
+    background-color: #4a47e0;
+  }  
